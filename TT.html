@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>time table</title>
+<h1 style="background-color:#73C6B6; color:white" align="center">SR INTERNATIONAL INSTITUTE OF TECHNOLOGY</h1>
+<h2 align="center">CLASSES TIMETABLE</h2>
+<style>
+table, th, td {
+  border: 2px solid #73C6B6;
+}
+</style>
+</head>
+<body>
+
+<b><div id = "MyClockDisplay" align="center" class = "clock" onload = "showTime()"> </div></b>
+
+<br><br>
+<br><br>
+<br><br>
+<table cellpadding="10px" height="70px" width="100%" align="center" border="1">
+<tr>
+<th  align="center"><b>Date</b><br></th>
+<th  align="center"><b>Day</b><br></th>
+<th  align="center"><b>3<SUP>rd</b><b> Year</b><br></th>
+<th  align="center"><b>2<SUP>nd</b><b> Year</b><br></th>
+<th  align="center"><b>1<SUP>st</b><b> Year 'A' SEC</b><br></th>
+<th  align="center"><b>1<SUP>st</b><b> Year 'B' SEC</b><br></th>
+<th  align="center"><b>1<SUP>st</b><b> Year 'C' SEC</b><br></th>
+</tr>
+<tr>
+    <td align="center"><br><b><p id="dat"></p></b><br></td>
+<td align="center"><br><b><p id="day"></p></b><br></td>
+<td align="center"><br><b><p id="demo"></p></b><br></td>
+<td align="center"><br><b><p id="yrr"></p></b><br></td>
+<td align="center"><br><b><p id="day1"></p></b><br></td>
+<td align="center"><br><b><p id="day2"></p></b><br></td>
+<td align="center"><br><b><p id="day3"></p></b><br></td>
+</tr>
+</table>
+<br>
+
+<script> 
+function showTime(){ 
+    var date = new Date(); 
+    var NoTimeDate = date.getFullYear()+'/'+(date.getMonth()+1)+'/'+date.getDate();
+    var h = date.getHours(); 
+    var m = date.getMinutes();
+    var s=date.getSeconds();
+    var session = "AM"; 
+    if(h == 0) { 
+        h = 12; 
+    } 
+    if(h > 12) { 
+        hh = h - 12; 
+        session = "PM"; 
+    } 
+    h = (h < 10) ? "0" + h : h;   ``
+    m = (m < 10) ? "0" + m : m; 
+    time = h+ ":" + m + ":" + s + session;
+let a,b,x,y,z,day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+if(h>=08 && m>=50)
+x="SE";
+if(h>=09 && m>=00)
+x="SE";
+if(h>=09 && m>=40)
+x="CD";
+if(h>=10 && m>=00)
+x="CD";
+if(h>=10 && m>=30)
+x="WT";
+if(h>11 && m>=00)
+x="WT";
+if(h>=11 && m>=20)
+x="PSY";
+if(h>=12 && m>=00)
+x="PSY";
+if(h>=12 && m>=10)
+x="LUNCH";
+if(h>=12 && m>=50)
+x="CNS";
+if(h>=13 && m>=00)
+x="CNS";
+if(h>=13 && m>=40)
+x="SPORTS";
+if(h>=14 && m>=00)
+x="CNS";
+if(h>=14 && m>=30)
+x="LIBRARY";
+if(h>=15 && m>=00)
+x="LIBRARY";
+if(h>=15 && m>=20)
+x="NO COLLEGE";
+if(h>=16 && m>=00)
+x="NO COLLEGE";
+
+
+day = "Monday";
+if(h>=08 && m>=50)
+y="COA";
+if(h>=09 && m>=00)
+y="COA";
+if(h>=09 && m>=40)
+y="M3";
+if(h>=10 && m>=00)
+y="M3";
+if(h>=10 && m>=30)
+y="OS";
+if(h>11 && m>=00)
+y="OS";
+if(h>=11 && m>=20)
+y="OS";
+if(h>=12 && m>=00)
+y="OS";
+if(h>=12 && m>=10)
+y="LUNCH";
+if(h>=12 && m>=50)
+y="TOC";
+if(h>=13 && m>=00)
+y="TOC";
+if(h>=13 && m>=40)
+y="SOC";
+if(h>=14 && m>=00)
+y="SOC";
+if(h>=14 && m>=30)
+y="LIBRARY";
+if(h>=15 && m>=00)
+y=" LIBRARY ";
+if(h>=15 && m>=20)
+y="NO COLLEGE";
+if(h>=16 && m>=00)
+y="NO COLLEGE";
+
+
+day = "Monday";
+if(h>=08 && m>=50)
+z="M-II";
+if(h>=09 && m>=00)
+z="M-II";
+if(h>=09 && m>=40)
+z="PSP";
+if(h>=10 && m>=00)
+z="PSP";
+if(h>=10 && m>=30)
+z="PSP";
+if(h>11 && m>=00)
+z="PSP";
+if(h>=11 && m>=20)
+z="PSP";
+if(h>=12 && m>=00)
+z="PSP";
+if(h>=12 && m>=10)
+z="LUNCH";
+if(h>=12 && m>=50)
+z="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=13 && m>=00)
+z="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=13 && m>=40)
+z="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=14 && m>=00)
+z="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=14 && m>=30)
+z="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=15 && m>=00)
+z="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=15 && m>=20)
+z="NO COLLEGE";
+if(h>=16 && m>=00)
+z="NO COLLEGE";
+
+
+day = "Monday";
+if(h>=08 && m>=50)
+a=" EP-II";
+if(h>=09 && m>=00)
+a=" EP-II";
+if(h>=09 && m>=40)
+a=" PHILO";
+if(h>=10 && m>=00)
+a="PHILO";
+if(h>=10 && m>=30)
+a=" M-II";
+if(h>11 && m>=00)
+a=" M-II";
+if(h>=11 && m>=20)
+a=" ENG";
+if(h>=12 && m>=00)
+a=" ENG";
+if(h>=12 && m>=10)
+z="LUNCH";
+if(h>=12 && m>=50)
+a=" PSP LAB";
+if(h>=13 && m>=00)
+a=" PSP LAB";
+if(h>=13 && m>=40)
+a=" PSP LAB";
+if(h>=14 && m>=00)
+a=" PSP LAB";
+if(h>=14 && m>=30)
+a=" PSP LAB";
+if(h>=15 && m>=00)
+a=" PSP LAB";
+if(h>=15 && m>=20)
+a="NO COLLEGE";
+if(h>=16 && m>=00)
+a="NO COLLEGE";
+
+
+day = "Monday";
+if(h>=08 && m>=50)
+b="ENG";
+if(h>=09 && m>=00)
+b="ENG";
+if(h>=09 && m>=40)
+b="PHILOL";
+if(h>=10 && m>=00)
+b="PHILOL";
+if(h>=10 && m>=30)
+b="EP-II";
+if(h>11 && m>=00)
+b="EP-II";
+if(h>=11 && m>=20)
+b="M-II";
+if(h>=12 && m>=00)
+b="M-II";
+if(h>=12 && m>=10)
+b="LUNCH";
+if(h>=12 && m>=50)
+b="M-II TUTORIAL";
+if(h>=13 && m>=00)
+b="M-II TUTORIAL";
+if(h>=13 && m>=40)
+b="M-II TUTORIAL";
+if(h>=14 && m>=00)
+b="M-II TUTORIAL";
+if(h>=14 && m>=30)
+b="M-II TUTORIAL";
+if(h>=15 && m>=00)
+b="M-II TUTORIAL";
+if(h>=15 && m>=20)
+b="NO COLLEGE";
+if(h>=16 && m>=00)
+b="NO COLLEGE";
+
+
+
+    break;
+  case 2:
+    day = "Tuesday";
+if(h>=08 && m>=50)
+x=" JAVA ";
+if(h>=09 && m>=00)
+x="JAVA";
+if(h>=09 && m>=40)
+x="WT";
+if(h>=10 && m>=00)
+x="WT";
+if(h>=10 && m>=30)
+x="CD";
+if(h>11 && m>=00)
+x="CD";
+if(h>=11 && m>=20)
+x="SE";
+if(h>=12 && m>=00)
+x="SE";
+if(h>=12 && m>=10)
+x="LUNCH";
+if(h>=12 && m>=50)
+x="CNS";
+if(h>=13 && m>=00)
+x="CNS";
+if(h>=13 && m>=40)
+x="CNS";
+if(h>=14 && m>=00)
+x="CNS";
+if(h>=14 && m>=30)
+x="WT";
+if(h>=15 && m>=00)
+x="WT";
+if(h>=15 && m>=20)
+x="NO COLLEGE";
+if(h>=16 && m>=00)
+x="NO COLLEGE";
+
+
+
+day = "Tuesday";
+if(h>=08 && m>=50)
+y=" M3";
+if(h>=09 && m>=00)
+y=" M3";
+if(h>=09 && m>=40)
+y=" COA";
+if(h>=10 && m>=00)
+y=" COA";
+if(h>=10 && m>=30)
+y=" OS";
+if(h>11 && m>=00)
+y=" OS";
+if(h>=11 && m>=20)
+y=" OS";
+if(h>=12 && m>=00)
+y=" OS";
+if(h>=12 && m>=10)
+y="LUNCH";
+if(h>=12 && m>=50)
+y=" SOC";
+if(h>=13 && m>=00)
+y=" SOC";
+if(h>=13 && m>=40)
+y=" TOC";
+if(h>=14 && m>=00)
+y=" TOC";
+if(h>=14 && m>=30)
+y=" LIBRARY";
+if(h>=15 && m>=00)
+y=" LIBRARY";
+if(h>=15 && m>=20)
+y="NO COLLEGE";
+if(h>=16 && m>=00)
+y="NO COLLEGE";
+
+
+day = "Tuesday";
+if(h>=08 && m>=50)
+z="PHILO";
+if(h>=09 && m>=00)
+z="PHILO";
+if(h>=09 && m>=40)
+z="EP-II";
+if(h>=10 && m>=00)
+z="EP-II";
+if(h>=10 && m>=30)
+z="M-II";
+if(h>11 && m>=00)
+z="M-II";
+if(h>=11 && m>=20)
+z="ENG";
+if(h>=12 && m>=00)
+z="ENG";
+if(h>=12 && m>=10)
+z="LUNCH";
+if(h>=12 && m>=50)
+z="PSP LAB";
+if(h>=13 && m>=00)
+z="PSP LAB";
+if(h>=13 && m>=40)
+z="PSP LAB";
+if(h>=14 && m>=00)
+z="PSP LAB";
+if(h>=14 && m>=30)
+z="PSP LAB";
+if(h>=15 && m>=00)
+z="PSP LAB";
+if(h>=15 && m>=20)
+z="NO COLLEGE";
+if(h>=16 && m>=00)
+z="NO COLLEGE";
+
+
+day = "Tuesday";
+if(h>=08 && m>=50)
+a=" ENG ";
+if(h>=09 && m>=00)
+a=" ENG ";
+if(h>=09 && m>=40)
+a=" M-II";
+if(h>=10 && m>=00)
+a=" M-II";
+if(h>=10 && m>=30)
+a=" PHILO";
+if(h>11 && m>=00)
+a=" PHILO";
+if(h>=11 && m>=20)
+a=" EP-II";
+if(h>=12 && m>=00)
+a=" EP-II";
+if(h>=12 && m>=10)
+a="LUNCH";
+if(h>=12 && m>=50)
+a=" EP BATCH-I(BATCH-2 LIBRARY) ";
+if(h>=13 && m>=00)
+a=" EP BATCH-I(BATCH-2 LIBRARY) ";
+if(h>=13 && m>=40)
+a=" EP BATCH-I(BATCH-2 LIBRARY) ";
+if(h>=14 && m>=00)
+a=" EP BATCH-I(BATCH-2 LIBRARY) ";
+if(h>=14 && m>=30)
+a=" EP BATCH-I(BATCH-2 LIBRARY) ";
+if(h>=15 && m>=00)
+a=" EP BATCH-I(BATCH-2 LIBRARY) ";
+if(h>=15 && m>=20)
+a="NO COLLEGE";
+if(h>=16 && m>=00)
+a="NO COLLEGE";
+
+day = "Tuesday";
+if(h>=08 && m>=50)
+b="EP-II";
+if(h>=09 && m>=00)
+b="EP-II";
+if(h>=09 && m>=40)
+b="PSP LAB";
+if(h>=10 && m>=00)
+b="PSP LAB";
+if(h>=10 && m>=30)
+b="PSP LAB";
+if(h>11 && m>=00)
+b="PSP LAB";
+if(h>=11 && m>=20)
+b="PSP LAB";
+if(h>=12 && m>=00)
+b="PSP LAB";
+if(h>=12 && m>=10)
+b="LUNCH";
+if(h>=12 && m>=50)
+b="PHILO-L";
+if(h>=13 && m>=00)
+b="PHILO-L";
+if(h>=13 && m>=40)
+b="ENG";
+if(h>=14 && m>=00)
+b="ENG";
+if(h>=14 && m>=30)
+b="M-II";
+if(h>=15 && m>=00)
+b="M-II";
+if(h>=15 && m>=20)
+b="NO COLLEGE";
+if(h>=16 && m>=00)
+b="NO COLLEGE";
+
+    break;
+  case 3:
+    day = "Wednesday";
+if(h>=08 && m>=50)
+x="JAVA";
+if(h>=09 && m>=00)
+x="JAVA";
+if(h>=09 && m>=40)
+x="SE";
+if(h>=10 && m>=00)
+x="SE";
+if(h>=10 && m>=30)
+x="PSY";
+if(h>11 && m>=00)
+x="PSY";
+if(h>=11 && m>=20)
+x="SE";
+if(h>=12 && m>=00)
+x="SE";
+if(h>=12 && m>=10)
+x="LUNCH";
+if(h>=12 && m>=50)
+x="CNS";
+if(h>=13 && m>=00)
+x="CNS";
+if(h>=13 && m>=40)
+x="WT";
+if(h>=14 && m>=00)
+x="WT";
+if(h>=14 && m>=30)
+x="CD";
+if(h>=15 && m>=00)
+x="CD";
+if(h>=15 && m>=20)
+x="NO COLLEGE";
+if(h>=16 && m>=00)
+x="NO COLLEGE";
+
+
+day = "Wednesday";
+if(h>=08 && m>=50)
+y=" COA";
+if(h>=09 && m>=00)
+y=" COA";
+if(h>=09 && m>=40)
+y=" OS";
+if(h>=10 && m>=00)
+y=" OS";
+if(h>=10 && m>=30)
+y=" SOC";
+if(h>11 && m>=00)
+y=" SOC";
+if(h>=11 && m>=20)
+y=" TOC";
+if(h>=12 && m>=00)
+y=" TOC";
+if(h>=12 && m>=10)
+y="LUNCH";
+if(h>=12 && m>=50)
+y=" OOP LAB ";
+if(h>=13 && m>=00)
+y=" OOP LAB ";
+if(h>=13 && m>=40)
+y=" OOP LAB ";
+if(h>=14 && m>=00)
+y=" OOP LAB ";
+if(h>=14 && m>=30)
+y=" OOP LAB ";
+if(h>=15 && m>=00)
+y=" OOP LAB ";
+if(h>=15 && m>=20)
+y="NO COLLEGE";
+if(h>=16 && m>=00)
+y="NO COLLEGE";
+
+
+day = "Wednesday";
+if(h>=08 && m>=50)
+z="ENGLISH";
+if(h>=09 && m>=00)
+z="ENGLISH";
+if(h>=09 && m>=40)
+z="PHILO";
+if(h>=10 && m>=00)
+z="PHILO";
+if(h>=10 && m>=30)
+z="EP-II";
+if(h>11 && m>=00)
+z="EP-II";
+if(h>=11 && m>=20)
+z="M-II";
+if(h>=12 && m>=00)
+z="M-II";
+if(h>=12 && m>=10)
+z="LUNCH";
+if(h>=12 && m>=50)
+z="M-II TUTORIAL";
+if(h>=13 && m>=00)
+z="M-II TUTORIAL";
+if(h>=13 && m>=40)
+z="M-II TUTORIAL";
+if(h>=14 && m>=00)
+z="M-II TUTORIAL";
+if(h>=14 && m>=30)
+z="M-II TUTORIAL";
+if(h>=15 && m>=00)
+z="M-II TUTORIAL";
+if(h>=15 && m>=20)
+z="NO COLLEGE";
+if(h>=16 && m>=00)
+z="NO COLLEGE";
+
+day = "Wednesday";
+if(h>=08 && m>=50)
+a=" M-II";
+if(h>=09 && m>=00)
+a=" M-II";
+if(h>=09 && m>=40)
+a=" PSP ";
+if(h>=10 && m>=00)
+a=" PSP ";
+if(h>=10 && m>=30)
+a=" PSP ";
+if(h>11 && m>=00)
+a=" PSP ";
+if(h>=11 && m>=20)
+a=" PSP ";
+if(h>=12 && m>=00)
+a=" PSP ";
+if(h>=12 && m>=10)
+a="LUNCH";
+if(h>=12 && m>=50)
+a=" EP-II TUTORIAL ";
+if(h>=13 && m>=00)
+a=" EP-II TUTORIAL ";
+if(h>=13 && m>=40)
+a=" EP-II TUTORIAL ";
+if(h>=14 && m>=00)
+a=" EP-II TUTORIAL ";
+if(h>=14 && m>=30)
+a=" EP-II TUTORIAL ";
+if(h>=15 && m>=00)
+a=" EP-II TUTORIAL ";
+if(h>=15 && m>=20)
+a="NO COLLEGE";
+if(h>=16 && m>=00)
+a="NO COLLEGE";
+
+day = "Wednesday";
+if(h>=08 && m>=50)
+b="EP-II";
+if(h>=09 && m>=00)
+b="EP-II";
+if(h>=09 && m>=40)
+b="ENG";
+if(h>=10 && m>=00)
+b="ENG";
+if(h>=10 && m>=30)
+b="M-II";
+if(h>11 && m>=00)
+b="M-II";
+if(h>=11 && m>=20)
+b="PHILO-L";
+if(h>=12 && m>=00)
+b="PHILO-L";
+if(h>=12 && m>=10)
+b="LUNCH";
+if(h>=12 && m>=50)
+b="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=13 && m>=00)
+b="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=13 && m>=40)
+b="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=14 && m>=00)
+b="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=14 && m>=30)
+b="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=15 && m>=00)
+b="EP BATCH-I(BATCH-2 LIBRARY)";
+if(h>=15 && m>=20)
+b="NO COLLEGE";
+if(h>=16 && m>=00)
+b="NO COLLEGE";
+
+
+
+    break;
+  case 4:
+    day = "Thursday";
+if(h>=08 && m>=50)
+x="JAVA";
+if(h>=09 && m>=00)
+x="JAVA";
+if(h>=09 && m>=40)
+x="WT LAB";
+if(h>=10 && m>=00)
+x="WT Lab";
+if(h>=10 && m>=30)
+x="WT LAB";
+if(h>11 && m>=00)
+x="WT LAB";
+if(h>=11 && m>=20)
+x="WT LAB";
+if(h>=12 && m>=00)
+x="WT LAB";
+if(h>=12 && m>=10)
+x="LUNCH";
+if(h>=12 && m>=50)
+x="CD";
+if(h>=13 && m>=00)
+x="CD";
+if(h>=13 && m>=40)
+x="SPORTS";
+if(h>=14 && m>=00)
+x="SPORTS";
+if(h>=14 && m>=30)
+x="SPORTS";
+if(h>=15 && m>=00)
+x="SPORTS";
+if(h>=15 && m>=20)
+x="NO COLLEGE";
+if(h>=16 && m>=00)
+x="NO COLLEGE";
+
+
+day = "Thursday";
+if(h>=08 && m>=50)
+y=" COA";
+if(h>=09 && m>=00)
+y=" COA";
+if(h>=09 && m>=40);
+y=" M3";
+if(h>=10 && m>=00)
+y=" M3";
+if(h>=10 && m>=30)
+y=" COA";
+if(h>11 && m>=00)
+y=" COA";
+if(h>=11 && m>=20)
+y=" TOC";
+if(h>=12 && m>=00)
+y=" TOC";
+if(h>=12 && m>=10)
+y="LUNCH";
+if(h>=12 && m>=50)
+y=" OS LAB ";
+if(h>=13 && m>=00)
+y=" OS LAB ";
+if(h>=13 && m>=40)
+y=" OS LAB ";
+if(h>=14 && m>=00)
+y=" OS LAB ";
+if(h>=14 && m>=30)
+y=" OS LAB ";
+if(h>=15 && m>=00)
+y=" OS LAB ";
+if(h>=15 && m>=20)
+y="NO COLLEGE";
+if(h>=16 && m>=00)
+y="NO COLLEGE";
+
+day = "Thursday";
+if(h>=08 && m>=50)
+z="ENG";
+if(h>=09 && m>=00)
+z="ENG";
+if(h>=09 && m>=40)
+z="EP-II";
+if(h>=10 && m>=00)
+z="EP-II";
+if(h>=10 && m>=30)
+z="M-II";
+if(h>11 && m>=00)
+z="M-II";
+if(h>=11 && m>=20)
+z="PHILO";
+if(h>=12 && m>=00)
+z="PHILO";
+if(h>=12 && m>=10)
+z="LUNCH";
+if(h>=12 && m>=50)
+z="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=13 && m>=00)
+z="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=13 && m>=40)
+z="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=14 && m>=00)
+z="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=14 && m>=30)
+z="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=15 && m>=00)
+z="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=15 && m>=20)
+z="NO COLLEGE";
+if(h>=16 && m>=00)
+z="NO COLLEGE";
+
+
+day = "Thursday";
+if(h>=08 && m>=50)
+b="M-II";
+if(h>=09 && m>=00)
+b="M-II";
+if(h>=09 && m>=40)
+b="PSP";
+if(h>=10 && m>=00)
+b="PSP";
+if(h>=10 && m>=30)
+b="PSP";
+if(h>11 && m>=00)
+b="PSP";
+if(h>=11 && m>=20)
+b="PSP";
+if(h>=12 && m>=00)
+b="PSP";
+if(h>=12 && m>=10)
+b="LUNCH";
+if(h>=12 && m>=50)
+b="EP-II TUTORIAL";
+if(h>=13 && m>=00)
+b="EP-II TUTORIAL";
+if(h>=13 && m>=40)
+b="EP-II TUTORIAL";
+if(h>=14 && m>=00)
+b="EP-II TUTORIAL";
+if(h>=14 && m>=30)
+b="EP-II TUTORIAL";
+if(h>=15 && m>=00)
+b="EP-II TUTORIAL";
+if(h>=15 && m>=20)
+b="NO COLLEGE";
+if(h>=16 && m>=00)
+b="NO COLLEGE";
+
+
+day = "Thursday";
+if(h>=08 && m>=50)
+a=" EP-II ";
+if(h>=09 && m>=00)
+a=" EP-II";
+if(h>=09 && m>=40)
+a=" PHILO";
+if(h>=10 && m>=00)
+a=" PHILO";
+if(h>=10 && m>=30)
+a=" ENG";
+if(h>11 && m>=00)
+a=" ENG";
+if(h>=11 && m>=20)
+a=" M-II";
+if(h>=12 && m>=00)
+a=" M-II";
+if(h>=12 && m>=10)
+a="LUNCH";
+if(h>=12 && m>=50)
+a=" SPORTS ";
+if(h>=13 && m>=00)
+a=" SPORTS ";
+if(h>=13 && m>=40)
+a=" SPORTS ";
+if(h>=14 && m>=00)
+a=" SPORTS ";
+if(h>=14 && m>=30)
+a=" SPORTS ";
+if(h>=15 && m>=00)
+a=" SPORTS ";
+if(h>=15 && m>=20)
+a="NO COLLEGE";
+if(h>=16 && m>=00)
+a="NO COLLEGE";
+
+  break;
+  case 5:
+    day = "Friday";
+if(h>=08 && m>=50)
+x="JAVA";
+if(h>=09 && m>=00)
+x="JAVA";
+if(h>=09 && m>=40)
+x="SE";
+if(h>=10 && m>=00)
+x="SE";
+if(h>=10 && m>=30)
+x="PSY";
+if(h>11 && m>=00)
+x="PSY";
+if(h>=11 && m>=20)
+x="PSY";
+if(h>=12 && m>=00)
+x="PSY";
+if(h>=12 && m>=10)
+x="LUNCH";
+if(h>=12 && m>=50)
+x="JAVA LAB";
+if(h>=13 && m>=00)
+x="JAVA LAB";
+if(h>=13 && m>=40)
+x="JAVA LAB";
+if(h>=14 && m>=00)
+x="JAVA LAB";
+if(h>=14 && m>=30)
+x="JAVA LAB";
+if(h>=15 && m>=00)
+x="JAVA LAB";
+if(h>=15 && m>=20)
+x="NO COLLEGE";
+if(h>=16 && m>=00)
+x="NO COLLEGE";
+
+
+day = "Friday";
+if(h>=08 && m>=50)
+y=" M3 ";
+if(h>=09 && m>=00)
+y=" M3 ";
+if(h>=09 && m>=40)
+y=" OOP";
+if(h>=10 && m>=00)
+y=" OOP";
+if(h>=10 && m>=30)
+y=" OOP";
+if(h>11 && m>=00)
+y=" OOP";
+if(h>=11 && m>=20)
+y=" OOP";
+if(h>=12 && m>=00)
+y=" OOP ";
+if(h>=12 && m>=10)
+y="LUNCH";
+if(h>=12 && m>=50)
+y=" TOC";
+if(h>=13 && m>=00)
+y=" TOC";
+if(h>=13 && m>=40)
+y=" SOC";
+if(h>=14 && m>=00)
+y=" SOC";
+if(h>=14 && m>=30)
+y=" SPORTS";
+if(h>=15 && m>=00)
+y=" SPORTS";
+if(h>=15 && m>=20)
+y="NO COLLEGE";
+if(h>=16 && m>=00)
+y="NO COLLEGE";
+
+day = "Friday";
+if(h>=08 && m>=50)
+z="EP-II";
+if(h>=09 && m>=00)
+z="EP-II";
+if(h>=09 && m>=40)
+z="M-II";
+if(h>=10 && m>=00)
+z="M-II";
+if(h>=10 && m>=30)
+z="PHILO";
+if(h>11 && m>=00)
+z="PHILO";
+if(h>=11 && m>=20)
+z="PHILO";
+if(h>=12 && m>=00)
+z="PHILO";
+if(h>=12 && m>=10)
+z="LUNCH";
+if(h>=12 && m>=50)
+z="EP-II TUTORIAL";
+if(h>=13 && m>=00)
+z="EP-II TUTORIAL";
+if(h>=13 && m>=40)
+z="EP-II TUTORIAL";
+if(h>=14 && m>=00)
+z="EP-II TUTORIAL";
+if(h>=14 && m>=30)
+z="EP-II TUTORIAL";
+if(h>=15 && m>=00)
+z="EP-II TUTORIAL";
+if(h>=15 && m>=20)
+z="NO COLLEGE";
+if(h>=16 && m>=00)
+z="NO COLLEGE";
+
+
+
+day = "Friday";
+if(h>=08 && m>=50)
+a=" PHILO ";
+if(h>=09 && m>=00)
+a=" PHILO";
+if(h>=09 && m>=40)
+a=" ENG";
+if(h>=10 && m>=00)
+a=" ENG ";
+if(h>=10 && m>=30)
+a=" M-II";
+if(h>11 && m>=00)
+a=" M-II ";
+if(h>=11 && m>=20)
+a=" EP-II";
+if(h>=12 && m>=00)
+a=" EP-II";
+if(h>=12 && m>=10)
+a="LUNCH";
+if(h>=12 && m>=50)
+a="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=13 && m>=00)
+a="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=13 && m>=40)
+a="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=14 && m>=00)
+a="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=14 && m>=30)
+a="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=15 && m>=00)
+a="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=15 && m>=20)
+a="NO COLLEGE";
+if(h>=16 && m>=00)
+a="NO COLLEGE";
+
+
+day = "Friday";
+if(h>=08 && m>=50)
+b="PHILO";
+if(h>=09 && m>=00)
+b="PHILO";
+if(h>=09 && m>=40)
+b="EP-II";
+if(h>=10 && m>=00)
+b="EP-II";
+if(h>=10 && m>=30)
+b="ENG";
+if(h>11 && m>=00)
+b="ENG";
+if(h>=11 && m>=20)
+b="M-II";
+if(h>=12 && m>=00)
+b="M-II";
+if(h>=12 && m>=10)
+b="LUNCH";
+if(h>=12 && m>=50)
+b="SPORTS";
+if(h>=13 && m>=00)
+b="SPORTS";
+if(h>=13 && m>=40)
+b="SPORTS";
+if(h>=14 && m>=00)
+b="SPORTS";
+if(h>=14 && m>=30)
+b="SPORTS";
+if(h>=15 && m>=00)
+b="SPORTS";
+if(h>=15 && m>=20)
+b="NO COLLEGE";
+if(h>=16 && m>=00)
+b="NO COLLEGE";
+
+
+
+
+
+
+
+    break;
+  case  6:
+    day = "Saturday";
+if(h>=08 && m>=50)
+x="JAVA";
+if(h>=09 && m>=00)
+x="JAVA";
+if(h>=09 && m>=40)
+x="CD";
+if(h>=10 && m>=00)
+x="CD";
+if(h>=10 && m>=30)
+x="PSY";
+if(h>11 && m>=00)
+x="PSY";
+if(h>=11 && m>=20)
+x="SE";
+if(h>=12 && m>=00)
+x="SE";
+if(h>=12 && m>=10)
+x="LUNCH";
+if(h>=12 && m>=50)
+x="CD LAB";
+if(h>=13 && m>=00)
+x="CD LAB";
+if(h>=13 && m>=40)
+x="CD LAB";
+if(h>=14 && m>=00)
+x="CD LAB";
+if(h>=14 && m>=30)
+x="CD LAB";
+if(h>=15 && m>=00)
+x="SPORTS";
+if(h>=15 && m>=20)
+x="NO COLLEGE";
+if(h>=16 && m>=00)
+x="NO COLLEGE";
+
+
+   day = "Saturday";
+if(h>=08 && m>=50)
+y=" M3";
+if(h>=09 && m>=00)
+y=" M3";
+if(h>=09 && m>=40)
+y=" COA";
+if(h>=10 && m>=00)
+y=" COA";
+if(h>=10 && m>=30)
+y=" SOC";
+if(h>11 && m>=00)
+y=" SOC";
+if(h>=11 && m>=20)
+y=" OOP ";
+if(h>=12 && m>=00)
+y=" OOP ";
+if(h>=12 && m>=10)
+y="LUNCH";
+if(h>=12 && m>=50)
+y=" LIBRARY/SPORTS";
+if(h>=13 && m>=00)
+y=" LIBRARY/SPORTS";
+if(h>=13 && m>=40)
+y=" LIBRARY/SPORTS";
+if(h>=14 && m>=00)
+y=" LIBRARY/SPORTS";
+if(h>=14 && m>=30)
+y=" LIBRARY/SPORTS";
+if(h>=15 && m>=00)
+y=" LIBRARY/SPORTS";
+if(h>=15 && m>=20)
+y="NO COLLEGE";
+if(h>=16 && m>=00)
+y="NO COLLEGE";
+
+
+
+day = "Saturday";
+if(h>=08 && m>=50)
+z="ENG";
+if(h>=09 && m>=00)
+z="ENG";
+if(h>=09 && m>=40)
+z="M-II";
+if(h>=10 && m>=00)
+z="M-II";
+if(h>=10 && m>=30)
+z="EP-II";
+if(h>11 && m>=00)
+z="EP-II";
+if(h>=11 && m>=20)
+z="PHILO";
+if(h>=12 && m>=00)
+z="PHILO";
+if(h>=12 && m>=10)
+z="LUNCH";
+if(h>=12 && m>=50)
+z="SPORTS";
+if(h>=13 && m>=00)
+z="SPORTS";
+if(h>=13 && m>=40)
+z="SPORTS";
+if(h>=14 && m>=00)
+z="SPORTS";
+if(h>=14 && m>=30)
+z="SPORTS";
+if(h>=15 && m>=00)
+z="SPORTS";
+if(h>=15 && m>=20)
+z="NO COLLEGE";
+if(h>=16 && m>=00)
+z="NO COLLEGE";
+
+day = "Saturday";
+if(h>=08 && m>=50)
+a=" EP-II";
+if(h>=09 && m>=00)
+a=" EP-II";
+if(h>=09 && m>=40)
+a=" ENG";
+if(h>=10 && m>=00)
+a=" ENG ";
+if(h>=10 && m>=30)
+a=" PHILO ";
+if(h>11 && m>=00)
+a=" PHILO ";
+if(h>=11 && m>=20)
+a=" M-II";
+if(h>=12 && m>=00)
+a=" M-II";
+if(h>=12 && m>=10)
+a="LUNCH";
+if(h>=12 && m>=50)
+a="M-II TUTORIAL";
+if(h>=13 && m>=00)
+a="M-II TUTORIAL";
+if(h>=13 && m>=40)
+a="M-II TUTORIAL";
+if(h>=14 && m>=00)
+a="M-II TUTORIAL";
+if(h>=14 && m>=30)
+a="M-II TUTORIAL";
+if(h>=15 && m>=00)
+a="M-II TUTORIAL";
+if(h>=15 && m>=20)
+a="NO COLLEGE";
+if(h>=16 && m>=00)
+a="NO COLLEGE";
+
+
+day = "Saturday";
+if(h>=08 && m>=50)
+b="PHILO";
+if(h>=09 && m>=00)
+b="PHILO";
+if(h>=09 && m>=40)
+b="EP-II";
+if(h>=10 && m>=00)
+b="EP-II";
+if(h>=10 && m>=30)
+b="M-II";
+if(h>11 && m>=00)
+b="M-II";
+if(h>=11 && m>=20)
+b="ENG";
+if(h>=12 && m>=00)
+b="ENG";
+if(h>=12 && m>=10)
+b="LUNCH";
+if(h>=12 && m>=50)
+b="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=13 && m>=00)
+b="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=13 && m>=40)
+b="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=14 && m>=00)
+b="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=14 && m>=30)
+b="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=15 && m>=00)
+b="EP BATCH-II(BATCH-1 LIBRARY)";
+if(h>=15 && m>=20)
+b="NO COLLEGE";
+if(h>=16 && m>=00)
+b="NO COLLEGE";
+
+
+
+}
+
+document.getElementById("dat").innerHTML =NoTimeDate;
+
+document.getElementById("demo").innerHTML =x;
+document.getElementById("day1").innerHTML = z;
+document.getElementById("yrr").innerHTML = y;
+document.getElementById("day2").innerHTML =a;
+document.getElementById("day3").innerHTML =b;
+document.getElementById("day").innerHTML =day;
+    document.getElementById("MyClockDisplay").innerText = time; 
+    document.getElementById("MyClockDisplay").textContent = time; 
+    setTimeout(showTime, 1000); 
+} 
+showTime(); 
+</script> 
+</body>
+</html>
